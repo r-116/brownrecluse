@@ -1,0 +1,15 @@
+print("Enter Current & Past Populations.")
+CP = int(input("Current Population:"))
+PP = int(input("Past Population:"))
+GR = float(((CP-PP)/PP)) #Growth Rate
+print("Current Growth Rate for Population is:", GR)
+print("Enter Period.")
+PE = int(input("Periodization:"))
+
+for year in range(1, PE + 1):
+    print( year, "\t", CP)
+    CP = CP + (GR * CP)
+
+#In loving memory of the Brown Recluse
+#that crawled out of my gym shorts,
+#who I promptly smushed into the ground.  
